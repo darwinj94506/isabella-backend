@@ -67,7 +67,7 @@ function validarDetalle(req, res, next) {
 function getDetalleEgreso(req, res, next) {
     var page = req.body.page;
     console.log(req.params.idegreso);
-    db.any('SELECT producto.titulo, producto.idproducto, producto.codigo, producto.codigofabricante, d.cantidad, d.preciounitario, e.idegreso, e.total, e.idusuario, e.iva, u.nombres, u.apellidos, u.cedula, u.direccion,e.fecha FROM detalle_egreso d JOIN producto ON producto.idproducto = d.idproducto JOIN egreso e ON e.idegreso = d.idegreso JOIN usuario u ON u.idusuario=e.idsolicitante WHERE d.idegreso = $1', req.params.idegreso)
+    db.any('SELECT producto.titulo, producto.descripcion, producto.idproducto, producto.codigo, producto.codigofabricante, producto.iva, d.cantidad, d.preciounitario, e.idegreso, e.total, e.idusuario, e.iva, u.nombres, u.apellidos, u.cedula, u.direccion,e.fecha FROM detalle_egreso d JOIN producto ON producto.idproducto = d.idproducto JOIN egreso e ON e.idegreso = d.idegreso JOIN usuario u ON u.idusuario=e.idsolicitante WHERE d.idegreso = $1', req.params.idegreso)
         .then(function(data) {
             res.status(200)
                 .json({
@@ -118,14 +118,12 @@ function getDetalles(req, res, next) {
 }
 
 function crudEgreso(req, res, next) {
-    console.log(req.user);
-    console.log(req.user.idusuario); //esto viene de middleware autheticated.js
-    var SQL = 'select * from  fun_ime_egreso($1, $2, $3, $4, $5, $6,$7);';
-    console.log([req.body.idegreso, req.body.idusuario, req.body.idsolicitante,req.body.total,
-        req.body.observacion, req.body.iva, 0, req.body.opcion
+    var SQL = 'select * from  fun_ime_egreso($1, $2, $3, $4, $5, $6, $7, $8);';
+    console.log([req.body.idegreso, req.user.idusuario, req.body.idsolicitante,
+        req.body.observacion, req.body.iva, req.body.total, req.body.opcion, req.body.fecha
     ]);
     db.any(SQL, [req.body.idegreso, req.user.idusuario, req.body.idsolicitante,
-            req.body.observacion, req.body.iva, req.body.total, req.body.opcion
+            req.body.observacion, req.body.iva, req.body.total, req.body.opcion, req.body.fecha
         ]).then(function(data) {
             res.status(200)
                 .json(data);
@@ -160,12 +158,10 @@ function crudDetalle2(req, res, next) {
         } else {
             lista += ' union ';
         }
-
         if (i == (cuerpo.length - 1)) {
             console.log(lista);
             db.any('select * from  fun_ime_detalle_egreso2($1, $2);', [lista, cuerpo.length])
                 .then(function(data) {
-
                     res.status(200)
                         .json(data);
                 })

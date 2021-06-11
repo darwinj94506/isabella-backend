@@ -41,7 +41,6 @@ function findUsuarios(req, res) {
         });
 }
 
-
 function crudUsuario(req, res, next) {
     console.log(req.body);
     console.log( [req.body.idusuario,
@@ -117,38 +116,26 @@ function datosCliente(req, res, next) {
         });
 }
 
-
-
-
 function login(req, res) {
     var params = req.body;
-    console.log(params);
     var password = params.password;
     var id = params.cedula;
-    console.log(password);
-    // console.log(params.gettoken);
     db.any('select * from usuario where cedula=$1 and estado=1', id)
         .then(function(user) {
-            console.log('usuario traido de bdd:' + user); // user array de json de la tabla usuarios
             if (user[0] == null) {
                 res.status(200)
                     .json({
-                        status: 'success',
+                        status: 'warning',
                         message: 'No existe este usuario'
                     });
             } else {
                 var user = user[0];
-                console.log(user.clave + ' ' + password);
+                if (password == user.password) {
+                    res.status(200).send({
+                        user:{...user},
+                        token: jwt.createToken(user)
+                    });
 
-                if (password == user.clave) {
-                    if (params.gettoken) {
-                        res.status(200).send({
-                            token: jwt.createToken(user)
-                        });
-                    } else {
-                        console.log('este es el usuario logueado:' + user);
-                        res.status(200).send({ user: user });
-                    }
                 } else {
                     res.status(404).send({
                         message: 'la contraseña no es correcta'
@@ -228,22 +215,6 @@ function findUsuarioByCedula(req, res, next) {
                 .json(err);
         });
 }
-// function findUsuarioByCedula(req, res, next) {
-//     var cedula = req.body.cedula;
-//     console.log(req.body);
-
-//     var SQL = 'select * from usuario where estado!=0 and cedula=$1';
-//     db.any(SQL, [cedula])
-//         .then(function(data) {
-//             res.status(200)
-//                 .json(data[0]);
-//         }).catch(function(err) {
-//             console.log(err);
-//             res.status(500)
-//                 .json(err);
-//         });
-// }
-
 
 
 

@@ -1,0 +1,50 @@
+2021-06-10 14:27:02 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 14:27:02 - Started 8048
+2021-06-10 14:40:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 14:40:35 - Started 7736
+2021-06-10 14:52:53 - Stopping isabellaappdaemon.exe
+2021-06-10 14:52:53 - ProcessKill 7736
+2021-06-10 14:52:53 - Found child process: 16348 Name: conhost.exe
+2021-06-10 14:52:53 - Found child process: 2360 Name: node.exe
+2021-06-10 14:52:53 - Stopping process 16348
+2021-06-10 14:52:53 - Send SIGINT 16348
+2021-06-10 14:52:53 - SIGINT to 16348 failed - Killing as fallback
+2021-06-10 14:52:53 - Stopping process 2360
+2021-06-10 14:52:53 - Send SIGINT 2360
+2021-06-10 14:52:53 - SIGINT to 2360 failed - Killing as fallback
+2021-06-10 14:52:53 - Stopping process 7736
+2021-06-10 14:52:53 - Send SIGINT 7736
+2021-06-10 14:52:53 - SIGINT to 7736 failed - Killing as fallback
+2021-06-10 14:52:53 - Finished isabellaappdaemon.exe
+2021-06-10 14:52:55 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 14:52:55 - Started 8864
+2021-06-10 15:03:20 - Stopping isabellaappdaemon.exe
+2021-06-10 15:03:20 - ProcessKill 8864
+2021-06-10 15:03:21 - Shutdown exception
+Message:Error en la llamada a procedimiento remoto. (Excepción de HRESULT: 0x800706BE)
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementObjectCollection.ManagementObjectEnumerator.MoveNext()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2021-06-10 15:04:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 15:04:01 - Started 5804
+2021-06-10 15:26:07 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 15:26:07 - Started 5752
+2021-06-10 15:28:42 - Stopping isabellaappdaemon.exe
+2021-06-10 15:28:42 - ProcessKill 5752
+2021-06-10 15:28:42 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2021-06-10 15:29:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-10 15:29:06 - Started 5972

@@ -1,8 +1,7 @@
 'use strict'
 var db = require('./../bdd.coneccion');
 var fs =require('fs');
- var path=require('path');
-
+ var path = require('path');
 
 function findProductosByImportacion(req, res) {
     const queryParams = req.body;
@@ -83,25 +82,28 @@ function findProductos(req, res) {
         pageNumber = parseInt(queryParams.pageNumber) || 0,
         pageSize = parseInt(queryParams.pageSize);
     var nitems = pageNumber * pageSize;
+    console.log([queryParams.idcategoria, queryParams.idmarca, queryParams.opcion])
 
-    db.any('SELECT * FROM producto_stock p  LIMIT ' + pageSize + ' OFFSET ' + nitems)
+    db.any('select * from findproductos($1,$2,$3)  LIMIT ' + pageSize 
+        + ' OFFSET ' + nitems, [queryParams.idcategoria, queryParams.idmarca, queryParams.opcion])
         .then(function(data) {
+            // console.log(data);
             var items = data;
-            db.any("select count(*)  from producto p where p.estado=1")
-                .then(function(total) {
-                    res.status(200)
-                        .json({
-                            items: items,
-                            totalCount: total[0].count
-                        });
+            db.any("select count(*)  from findproductos($1,$2,$3)",[queryParams.idcategoria, queryParams.idmarca, queryParams.opcion])
+            .then(function(total) {
+                res.status(200)
+                    .json({
+                        items: items,
+                        totalCount: total[0].count
+                    });
+            })
+            .catch(function(err) {
+                console.log(err);
+                res.status(400).json({
+                    result: 'ERROR',
+                    message: err[0]
                 })
-                .catch(function(err) {
-                    console.log(err);
-                    res.status(400).json({
-                        result: 'ERROR',
-                        message: err[0]
-                    })
-                });
+            });
         })
         .catch(function(err) {
             console.log(err);
@@ -113,22 +115,43 @@ function findProductos(req, res) {
 }
 
 
-function crudProducto(req, res, next) {
-    var SQL = 'select * from  fun_ime_producto($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13);';
 
+
+
+function crudProducto(req, res, next) {
+    console.log( [
+        req.body.idproducto,
+        req.body.idpresentacion,
+        '',
+        '',
+        req.body.descripcion,
+        req.body.pvp,     
+        req.body.codigofabricante,
+        [],
+        req.body.iva,
+        req.body.stock_minimo,
+        req.body.talla,
+        req.body.unidad_medida,
+        req.body.cantidad,
+        1,
+        req.body.opcion
+    ])
+    var SQL = 'select * from  fun_ime_producto($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15);';
     db.any(SQL, [
             req.body.idproducto,
-            req.body.idtipo,
+            req.body.idpresentacion,
+            '',
+            '',
             req.body.descripcion,
-            req.body.precio1,
-            req.body.precio2,
-            req.body.precio3,
-            req.body.costo,
+            req.body.pvp,     
             req.body.codigofabricante,
-            req.body.preciofacturar,
-            req.body.preciomercadolibre,
-            req.body.titulo,
-            req.body.imagenes,
+            [],
+            req.body.iva,
+            req.body.stock_minimo,
+            req.body.talla,
+            req.body.unidad_medida,
+            req.body.cantidad,
+            1,
             req.body.opcion
         ])
         .then(function(data) {
@@ -212,6 +235,35 @@ function uploadImage(req,res, next){
     });
   }
 
+ 
+function subidaMasivaProductos(req, res, next) {
+    console.log(req.body)
+    var cuerpo = req.body.data;
+    console.log(cuerpo);
+    var lista = '';
+    for (var i in cuerpo) {
+        lista += 'select ' + cuerpo[i].tipo + '::integer idtipo,' + cuerpo[i].descripcion + '::character varying descripcion,' + cuerpo[i].precio1 + '::numeric precio1,' + cuerpo[i].costo + '::numeric costo,'+  cuerpo[i].codigoFabricante + '::character varying codigofabricante';
+        if (i == (cuerpo.length - 1)) {
+            lista += ';';
+        } else {
+            lista += ' union ';
+        }
+        if (i == (cuerpo.length - 1)) {
+            console.log(lista);
+            db.any('select * from  fun_crear_productos($1, $2);', [lista, cuerpo.length])
+                .then(function(data) {
+                    res.status(200)
+                        .json(data);
+                })
+                .catch(function(err) {
+                    console.log(err);
+                    res.status(500).json(err)
+                });
+        }
+    }
+}
+  
+
 
 //----------------------------------------------------------------------------------------
 
@@ -224,5 +276,47 @@ module.exports = {
     getMaterialesSelect2: getMaterialesSelect2,
     uploadImage:uploadImage,
     getImageFile:getImageFile,
-    findProductosByCodigoFabricante:findProductosByCodigoFabricante
+    findProductosByCodigoFabricante:findProductosByCodigoFabricante,
+    subidaMasivaProductos:subidaMasivaProductos
 };
+
+
+
+
+
+
+// function findProductos(req, res) {
+//     const queryParams = req.body;
+//     const filter = queryParams.filter || '',
+//         sortOrder = queryParams.sortOrder,
+//         pageNumber = parseInt(queryParams.pageNumber) || 0,
+//         pageSize = parseInt(queryParams.pageSize);
+//     var nitems = pageNumber * pageSize;
+
+//     db.any('SELECT * FROM producto_stock p  LIMIT ' + pageSize + ' OFFSET ' + nitems)
+//         .then(function(data) {
+//             var items = data;
+//             db.any("select count(*)  from producto p where p.estado=1")
+//                 .then(function(total) {
+//                     res.status(200)
+//                         .json({
+//                             items: items,
+//                             totalCount: total[0].count
+//                         });
+//                 })
+//                 .catch(function(err) {
+//                     console.log(err);
+//                     res.status(400).json({
+//                         result: 'ERROR',
+//                         message: err[0]
+//                     })
+//                 });
+//         })
+//         .catch(function(err) {
+//             console.log(err);
+//             res.status(400).json({
+//                 result: 'ERROR',
+//                 message: err[0]
+//             })
+//         });
+// }

@@ -10,7 +10,7 @@ var db=require('./../bdd.coneccion');
           pageSize = parseInt(queryParams.pageSize);
     var nitems=pageNumber*pageSize;
         
-          db.any('SELECT i.idimportacion, i.fecha, i.idusuario, i.numerodocumento, u.nombres, u.apellidos FROM importacion i JOIN usuario u on u.idusuario=i.idusuario  where i.estado=1 LIMIT '+pageSize+' OFFSET '+nitems)
+          db.any('SELECT i.idimportacion, i.fecha, i.idusuario, i.numerofactura, u.nombres, u.apellidos FROM importacion i JOIN usuario u on u.idusuario=i.idusuario  where i.estado=1 LIMIT '+pageSize+' OFFSET '+nitems)
           .then(function (data) {
             var items=data;
               db.any("select count(*)  from importacion i where i.estado=1")
@@ -71,7 +71,7 @@ function crudImportacion(req,res,next){
     req.body.fecha, 
     req.body.descripcion,
     req.body.opcion,
-    req.body.numerodocumento
+    req.body.numerofactura
   ]);
 
 
@@ -82,7 +82,7 @@ function crudImportacion(req,res,next){
     req.body.fecha, 
     req.body.descripcion,
     req.body.opcion,
-    req.body.numerodocumento
+    req.body.numerofactura
   ])
   .then(function(data){
     res.status(200)

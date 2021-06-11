@@ -8,11 +8,13 @@ var md_upload=multipart({uploadDir:'./public/images'});
 // router.post('/getListaTipos', MaterialController.getListaTipos);
 router.post('/upload_images',md_upload,ProductoController.uploadImage);
 // router.post('/upload_images', ProductoController.uploadImage);
+router.post('/subidaMasivaProductos', ProductoController.subidaMasivaProductos);
 router.post('/getMaterialesSelect2', ProductoController.getMaterialesSelect2);
 router.post('/findProductos', ProductoController.findProductos);
 router.post('/crudProducto', ProductoController.crudProducto);
 router.get('/findProductoByCodigoFabricante/:codigofabricante', ProductoController.findProductoByCodigoFabricante);
 router.get('/findProductosByCodigoFabricante/:codigofabricante', ProductoController.findProductosByCodigoFabricante);
+
 
 router.get('/getImageProducto/:imageFile',ProductoController.getImageFile);
 // router.post('/findProductosByImportacion',ProductoController.findProductosByImportacion);

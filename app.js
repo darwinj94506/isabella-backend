@@ -10,6 +10,7 @@ var app = express();
 require('dotenv').config();
 //cargar rutas declaracion
 var tipoRouter=require('./routes/tipo.route');
+var subTipoRouter=require('./routes/subtipo.route');
 var usuarioRouter=require('./routes/usuario.route');
 var egresoRouter=require('./routes/egreso.route');
 var productoRouter=require('./routes/producto.route');
@@ -42,6 +43,7 @@ app.use('/',express.static('client',{redirect:false}));
 //-----Rutas creadas -------- 
 
 app.use('/api',tipoRouter);
+app.use('/api', subTipoRouter);
 app.use('/api',usuarioRouter);
 app.use('/api',egresoRouter);
 
