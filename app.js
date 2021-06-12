@@ -7,7 +7,8 @@ var logger = require('morgan');
 var bodyParser=require('body-parser');
 var app = express();
 //cargar variables de entorno
-require('dotenv').config();
+// require('dotenv').config();
+
 //cargar rutas declaracion
 var tipoRouter=require('./routes/tipo.route');
 var subTipoRouter=require('./routes/subtipo.route');

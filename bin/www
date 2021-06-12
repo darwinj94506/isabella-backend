@@ -6,15 +6,15 @@
 var app = require('../app');
 var debug = require('debug')('apiinventario:server');
 var http = require('http');
-var MercadoLibreController = require('./../controllers/mercado-libre.controller');
-var cron = require('node-cron');
+var ENVIROMENT = require('../config');
 
+// require('custom-env').env('dev');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3002');
+var port = normalizePort(ENVIROMENT.PORT || '3030');
 
 app.set('port', port);
 
@@ -35,18 +35,6 @@ db.connect()
         obj.done(); // success, release connection;
         server.listen(port, () => {
             console.log('Coneccion la bdd exitosa, El servidor escucha en el puerto:' + port);
-            // MercadoLibreController.getToken();
-            // llama a la tarea de actualizacion del token de mercado libre
-            // cron.schedule('0 0-23/4 * * *', () => {
-            //     console.log("actulizacion de token cada 4 hora");
-            //     MercadoLibreController.actualizarTokenMec(); 
-            // });
-            //actualiza las publicaciones vencidas
-            // cron.schedule('0 1 * * *', () => {
-            //     console.log("tarea Ejecutada a la 1 ");
-            //     MercadoLibreController.actualizarPublicacionesVencidas();
-            // });
-
         });
         server.on('error', onError);
         server.on('listening', onListening);
