@@ -1,2 +1,22 @@
 2021-06-11 15:30:41 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2021-06-11 15:30:42 - Started 11708
+2021-06-13 07:23:04 - Stopping isabellaappdaemon.exe
+2021-06-13 07:23:04 - ProcessKill 11708
+2021-06-13 07:23:04 - Shutdown exception
+Message:Se está cerrando el sistema.
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2021-06-13 07:23:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-13 07:23:31 - Started 6120
+2021-06-13 09:50:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-13 09:50:28 - Started 6456
+2021-06-14 12:31:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-14 12:31:14 - Started 5728

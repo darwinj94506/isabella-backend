@@ -1,18 +1,33 @@
 'use strict'
 var db = require('./../bdd.coneccion');
-
+var ClasificacionModel = require('../models/clasificacion').Clasificacion;
 function getTiposSelect(req, res, next) {
-    console.log(db);
-    db.any('select * from tipo where estado=1')
-        .then(function(data) {
-            console.log(data);
+    try{
+        ClasificacionModel.findAll()
+        .then((data)=>{
             res.status(200)
-                .json(data);
+            .json(data);
         })
-        .catch(function(err) {
-            console.log(err);
+        .catch((err)=>{
+           console.log(err);
             res.status(400).json(err)
-        });
+        })
+
+    }catch(err){
+        console.log(err)
+    }
+    
+    // console.log(db);
+    // db.any('select * from tipo where estado=1')
+    //     .then(function(data) {
+    //         console.log(data);
+    //         res.status(200)
+    //             .json(data);
+    //     })
+    //     .catch(function(err) {
+    //         console.log(err);
+    //         res.status(400).json(err)
+    //     });
 }
 
 function getTipo(req, res, next) {
@@ -85,7 +100,7 @@ function crudTipo(req, res, next) {
 }
 
 module.exports = {
-    getTiposSelect: getTiposSelect,
+    getTiposSelect,
     getTipo: getTipo,
     crudTipo: crudTipo,
     findTipos: findTipos

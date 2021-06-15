@@ -1,2 +1,209 @@
 No env file present for the current environment:  production 
  Falling back to .env config
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+No env file present for the current environment:  production 
+ Falling back to .env config
+C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81
+        throw new Error(`Please install ${moduleName} package manually`);
+        ^
+
+Error: Please install mysql2 package manually
+    at ConnectionManager._loadDialectModule (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:81:15)
+    at new ConnectionManager (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:25:21)
+    at new MysqlDialect (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\dialects\mysql\index.js:15:30)
+    at new Sequelize (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\sequelize\lib\sequelize.js:340:20)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\models\index.js:15:15)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Module.require (internal/modules/cjs/loader.js:1025:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www:10:14)
+    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
