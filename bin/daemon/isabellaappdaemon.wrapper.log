@@ -48,3 +48,25 @@ Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
    en winsw.WrapperService.OnShutdown()
 2021-06-10 15:29:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2021-06-10 15:29:06 - Started 5972
+2021-06-15 12:26:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-15 12:26:32 - Started 9776
+2021-06-16 18:55:42 - Stopping isabellaappdaemon.exe
+2021-06-16 18:55:42 - ProcessKill 9776
+2021-06-16 18:55:43 - Shutdown exception
+Message:Clase no registrada
+
+Stacktrace:   en System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   en System.Management.ManagementScope.InitializeGuts(Object o)
+   en System.Management.ManagementScope.Initialize()
+   en System.Management.ManagementObjectSearcher.Initialize()
+   en System.Management.ManagementObjectSearcher.Get()
+   en winsw.WrapperService.GetChildPids(Int32 pid)
+   en winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   en winsw.WrapperService.StopIt()
+   en winsw.WrapperService.OnShutdown()
+2021-06-16 18:56:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-16 18:56:11 - Started 6032
+2021-06-19 19:23:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-19 19:23:53 - Started 5320
+2021-06-20 10:01:05 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\node_modules\node-windows\lib\wrapper.js --file C:\Users\DARWIN\Documents\isabella\inventarioApp\isabella-backend\bin\www --scriptoptions= --log "IsabellaAppDaemon wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-20 10:01:05 - Started 5336

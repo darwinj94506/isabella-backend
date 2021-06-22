@@ -1146,3 +1146,187 @@ Coneccion la bdd exitosa, El servidor escucha en el puerto:3002
 [0mPOST /api/findProductos [32m200 [0m122.503 ms - 4278[0m
 [ 0, 15, 2 ]
 [0mPOST /api/findProductos [32m200 [0m8.352 ms - 2635[0m
+Coneccion la bdd exitosa, El servidor escucha en el puerto:3002
+[0mGET /customers [32m200 [0m48.050 ms - 1168[0m
+[0mGET /runtime.js [36m304 [0m8.581 ms - -[0m
+[0mGET /styles.js [36m304 [0m13.181 ms - -[0m
+[0mGET /main.js [36m304 [0m10.391 ms - -[0m
+[0mGET /scripts.js [36m304 [0m14.045 ms - -[0m
+[0mGET /polyfills.js [36m304 [0m19.681 ms - -[0m
+[0mGET /vendor.js [36m304 [0m19.206 ms - -[0m
+[0mGET /common.js [36m304 [0m6.966 ms - -[0m
+[0mGET /app-content-pages-pages-module~components-e-commerce-e-commerce-module~egreso-egreso-module~envio-da~dd16e6af.js [36m304 [0m6.978 ms - -[0m
+[0mGET /app-content-pages-pages-module.js [36m304 [0m6.551 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_large.png [36m304 [0m9.595 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~egreso-egreso-module~envio-datos-cliente-envio-datos-cliente~ff4a83c4.js [36m304 [0m10.409 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module.js [36m304 [0m15.924 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~envio-datos-cliente-envio-datos-cliente-module.js [36m304 [0m11.162 ms - -[0m
+[ 0, 0, 1 ]
+[0mGET /api/getAllMarcas [36m304 [0m228.218 ms - -[0m
+[0mGET /api/allcategorias [36m304 [0m229.998 ms - -[0m
+[0mGET /assets/app/media/img/misc/quick_actions_bg.jpg [36m304 [0m5.304 ms - -[0m
+[0mGET /assets/app/media/img/misc/notification_bg.jpg [36m304 [0m5.106 ms - -[0m
+[0mPOST /api/findProductos [32m200 [0m430.704 ms - 4278[0m
+[0mGET /api/logs?types=alert [36m304 [0m8.040 ms - -[0m
+[0mGET /api/logs?types=event [36m304 [0m5.058 ms - -[0m
+[0mGET /api/logs?types=log [36m304 [0m2.846 ms - -[0m
+[0mGET /api/messenger [36m304 [0m2.450 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_default_dark.png [36m304 [0m2.923 ms - -[0m
+[0mGET /assets/app/media/img/flags/020-flag.svg [36m304 [0m4.039 ms - -[0m
+[0mGET /assets/app/media/img/flags/015-china.svg [36m304 [0m1.811 ms - -[0m
+[0mGET /assets/app/media/img/flags/016-spain.svg [36m304 [0m2.060 ms - -[0m
+[0mGET /assets/app/media/img/flags/014-japan.svg [36m304 [0m5.976 ms - -[0m
+[0mGET /assets/app/media/img/flags/017-germany.svg [36m304 [0m7.962 ms - -[0m
+[0mGET /assets/app/media/img/flags/019-france.svg [36m304 [0m6.007 ms - -[0m
+[0mGET /assets/app/media/img/users/user4.jpg [36m304 [0m5.254 ms - -[0m
+[0mGET /line-awesome.woff2?v=1.1. [36m304 [0m1.441 ms - -[0m
+[0mGET /Flaticon.woff [36m304 [0m1.691 ms - -[0m
+[0mGET /MaterialIcons-Regular.woff2 [36m304 [0m2.939 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/favicon.ico [32m200 [0m4.459 ms - 1150[0m
+[ 1, 0, 3 ]
+[0mPOST /api/findProductos [32m200 [0m188.796 ms - 4242[0m
+[ 1, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m173.489 ms - 4242[0m
+[ 1, 4, 4 ]
+[0mPOST /api/findProductos [32m200 [0m173.169 ms - 3050[0m
+[ 1, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m176.225 ms - 4242[0m
+[ 3, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m194.806 ms - 29[0m
+[ 1, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m168.389 ms - 4242[0m
+[ 4, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m201.843 ms - 29[0m
+[ 9, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m228.562 ms - 29[0m
+[ 9, 0, 3 ]
+[0mPOST /api/findProductos [32m200 [0m199.897 ms - 910[0m
+[ 11, 0, 3 ]
+[0mPOST /api/findProductos [32m200 [0m312.869 ms - 3084[0m
+[ 11, 2, 4 ]
+[0mPOST /api/findProductos [32m200 [0m337.422 ms - 29[0m
+[ 11, 1, 4 ]
+[0mPOST /api/findProductos [32m200 [0m246.552 ms - 29[0m
+[ 11, 14, 4 ]
+[0mPOST /api/findProductos [32m200 [0m238.420 ms - 458[0m
+[ 11, 15, 4 ]
+[0mPOST /api/findProductos [32m200 [0m207.319 ms - 2219[0m
+[ 11, 16, 4 ]
+[0mPOST /api/findProductos [32m200 [0m251.886 ms - 29[0m
+[ 11, 15, 4 ]
+[0mPOST /api/findProductos [32m200 [0m209.868 ms - 2219[0m
+[0mGET /customers [32m200 [0m50.144 ms - 1168[0m
+[0mGET /vendor.js [36m304 [0m63.468 ms - -[0m
+[0mGET /scripts.js [36m304 [0m377.950 ms - -[0m
+[0mGET /main.js [36m304 [0m71.448 ms - -[0m
+[0mGET /polyfills.js [36m304 [0m58.538 ms - -[0m
+[0mGET /styles.js [36m304 [0m17.450 ms - -[0m
+[0mGET /runtime.js [36m304 [0m16.195 ms - -[0m
+[0mGET /common.js [36m304 [0m3358.566 ms - -[0m
+[0mGET /app-content-pages-pages-module.js [36m304 [0m3462.868 ms - -[0m
+[0mGET /app-content-pages-pages-module~components-e-commerce-e-commerce-module~egreso-egreso-module~envio-da~dd16e6af.js [36m304 [0m3465.407 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_large.png [36m304 [0m329.189 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~egreso-egreso-module~envio-datos-cliente-envio-datos-cliente~ff4a83c4.js [36m304 [0m5.521 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~envio-datos-cliente-envio-datos-cliente-module.js [36m304 [0m3.299 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module.js [36m304 [0m2.725 ms - -[0m
+[ 0, 0, 1 ]
+[0mGET /api/allcategorias [36m304 [0m209.274 ms - -[0m
+[0mGET /api/getAllMarcas [36m304 [0m209.008 ms - -[0m
+[0mPOST /api/findProductos [32m200 [0m401.355 ms - 4278[0m
+[0mGET /assets/app/media/img/misc/notification_bg.jpg [36m304 [0m3.940 ms - -[0m
+[0mGET /assets/app/media/img/misc/quick_actions_bg.jpg [36m304 [0m2.412 ms - -[0m
+[0mGET /api/logs?types=alert [36m304 [0m7.566 ms - -[0m
+[0mGET /api/logs?types=event [36m304 [0m6.131 ms - -[0m
+[0mGET /api/logs?types=log [36m304 [0m2.154 ms - -[0m
+[0mGET /api/messenger [36m304 [0m1.789 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_default_dark.png [36m304 [0m12.120 ms - -[0m
+[0mGET /line-awesome.woff2?v=1.1. [36m304 [0m9.021 ms - -[0m
+[0mGET /Flaticon.woff [36m304 [0m4.953 ms - -[0m
+[0mGET /assets/app/media/img/flags/020-flag.svg [36m304 [0m3.514 ms - -[0m
+[0mGET /assets/app/media/img/users/user4.jpg [36m304 [0m3.424 ms - -[0m
+[0mGET /assets/app/media/img/flags/015-china.svg [36m304 [0m2.472 ms - -[0m
+[0mGET /assets/app/media/img/flags/016-spain.svg [36m304 [0m2.673 ms - -[0m
+[0mGET /assets/app/media/img/flags/014-japan.svg [36m304 [0m1.786 ms - -[0m
+[0mGET /assets/app/media/img/flags/017-germany.svg [36m304 [0m3.974 ms - -[0m
+[0mGET /assets/app/media/img/flags/019-france.svg [36m304 [0m1.631 ms - -[0m
+[0mGET /MaterialIcons-Regular.woff2 [36m304 [0m1.605 ms - -[0m
+CN: postgres://postgres:####@localhost:5432/isabella
+EVENT: connect ECONNREFUSED 127.0.0.1:5432
+Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 5432
+}
+ERROR en la coneccion a la base de datos: Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 5432
+}
+Coneccion la bdd exitosa, El servidor escucha en el puerto:3002
+[0mGET /customers [32m200 [0m22.084 ms - 1168[0m
+[0mGET /polyfills.js [36m304 [0m9.959 ms - -[0m
+[0mGET /runtime.js [36m304 [0m8.439 ms - -[0m
+[0mGET /main.js [36m304 [0m7.003 ms - -[0m
+[0mGET /styles.js [36m304 [0m6.767 ms - -[0m
+[0mGET /vendor.js [36m304 [0m6.630 ms - -[0m
+[0mGET /scripts.js [36m304 [0m6.042 ms - -[0m
+[0mGET /app-content-pages-pages-module~components-e-commerce-e-commerce-module~egreso-egreso-module~envio-da~dd16e6af.js [36m304 [0m5.031 ms - -[0m
+[0mGET /common.js [36m304 [0m5.075 ms - -[0m
+[0mGET /app-content-pages-pages-module.js [36m304 [0m5.157 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_large.png [36m304 [0m6.940 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~envio-datos-cliente-envio-datos-cliente-module.js [36m304 [0m17.423 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module.js [36m304 [0m5.405 ms - -[0m
+[0mGET /components-e-commerce-e-commerce-module~egreso-egreso-module~envio-datos-cliente-envio-datos-cliente~ff4a83c4.js [36m304 [0m21.638 ms - -[0m
+[ 0, 0, 1 ]
+[0mGET /api/getAllMarcas [36m304 [0m198.743 ms - -[0m
+[0mGET /api/allcategorias [36m304 [0m203.163 ms - -[0m
+[0mGET /assets/app/media/img/misc/notification_bg.jpg [36m304 [0m3.756 ms - -[0m
+[0mGET /assets/app/media/img/misc/quick_actions_bg.jpg [36m304 [0m2.139 ms - -[0m
+[0mPOST /api/findProductos [32m200 [0m385.519 ms - 4278[0m
+[0mGET /api/logs?types=alert [36m304 [0m7.763 ms - -[0m
+[0mGET /api/logs?types=event [36m304 [0m7.866 ms - -[0m
+[0mGET /api/logs?types=log [36m304 [0m4.380 ms - -[0m
+[0mGET /api/messenger [36m304 [0m3.150 ms - -[0m
+[0mGET /line-awesome.woff2?v=1.1. [36m304 [0m3.867 ms - -[0m
+[0mGET /Flaticon.woff [36m304 [0m3.546 ms - -[0m
+[0mGET /assets/demo/default/media/img/logo/logo_default_dark.png [36m304 [0m3.431 ms - -[0m
+[0mGET /assets/app/media/img/flags/020-flag.svg [36m304 [0m2.316 ms - -[0m
+[0mGET /assets/app/media/img/users/user4.jpg [36m304 [0m4.346 ms - -[0m
+[0mGET /assets/app/media/img/flags/015-china.svg [36m304 [0m1.842 ms - -[0m
+[0mGET /assets/app/media/img/flags/016-spain.svg [36m304 [0m1.833 ms - -[0m
+[0mGET /assets/app/media/img/flags/014-japan.svg [36m304 [0m3.084 ms - -[0m
+[0mGET /assets/app/media/img/flags/017-germany.svg [36m304 [0m2.967 ms - -[0m
+[0mGET /assets/app/media/img/flags/019-france.svg [36m304 [0m1.151 ms - -[0m
+[0mGET /MaterialIcons-Regular.woff2 [36m304 [0m3.995 ms - -[0m
+CN: postgres://postgres:####@localhost:5432/isabella
+EVENT: connect ECONNREFUSED 127.0.0.1:5432
+Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 5432
+}
+ERROR en la coneccion a la base de datos: Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 5432
+}
+Coneccion la bdd exitosa, El servidor escucha en el puerto:3002
+[0mGET /customers [32m200 [0m25.208 ms - 1168[0m
+[0mGET /runtime.js [32m200 [0m22.235 ms - 9042[0m
+[0mGET /scripts.js [32m200 [0m25.005 ms - 72476[0m
+[0mGET /polyfills.js [32m200 [0m23.800 ms - 489313[0m
+[0mGET /main.js [32m200 [0m25.123 ms - 677148[0m
+[0mGET /styles.js [32m200 [0m20.561 ms - 1620420[0m
+[0mGET /vendor.js [32m200 [0m23.977 ms - 8793912[0m
