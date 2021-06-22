@@ -46,7 +46,7 @@ package-lock.json
 yarn-error.log
 
 # logs daemon windows
-/bin/daemon
+/bin/daemon/
 
 /client
 
