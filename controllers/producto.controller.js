@@ -181,59 +181,6 @@ function getMaterialesSelect2(req, res, next) {
         });
 }
 
-function uploadImage(req,res, next){
-    var file_name='no subido...';
-    console.log(req.files);
-    var imagenes=req.files.image;
-    if(req.files.image){
-        var imagenes=req.files.image;
-        var sum=0;
-        var file_path=req.files.image.path;
-        //comentar para desarrollo
-        // var file_split=file_path.split('\\'); 
-        //descomentar para produccion
-        var file_split=file_path.split('/');
-
-        var file_name=file_split[2];
-        var ext_split=file_name.split('\.');
-        var file_ext=ext_split[1];
-        // if(file_ext=='png'|| file_ext=='jpg' || file_ext=='jpeg' || file_ext=='gif'){
-            // if(userId != req.user.sub){
-            //   return res.status(500).send({message:'no tiene permiso para actualizar el usuario'});
-            // }
-                // una vez subidas las imagenes al servidor actualiza el producto con el array de imgs subidas
-                res.status(200).json(file_name);
-                //---------------------------------------
-                 
-        //     }else{
-        //     fs.unlink(file_path,(err)=>{
-        //         if(err){
-        //         res.status(200).send({message:'extension no valida y fichero no borrado'});
-        //         }else{
-        //         res.status(200).send({message:'extension no valida'});
-        //         }
-        //     });
-        // }
-
-    }else{
-        res.status(200).send({message:'no se ha subido archivos'});
-    }
-  }
-
-  function getImageFile(req,res){
-    var imageFile=req.params.imageFile;
-    var path_file='./public/images/'+imageFile;
-  
-    fs.exists(path_file,function(exists){
-      if(exists){
-        console.log("si existe y te mando");
-        res.sendFile(path.resolve(path_file));
-      }else{
-        res.status(404).send({message:'No existe esta imagen'});
-        console.log('no existe esta imagen no insista');
-      }
-    });
-  }
 
  
 function subidaMasivaProductos(req, res, next) {
@@ -274,49 +221,6 @@ module.exports = {
     findProductoByCodigoFabricante: findProductoByCodigoFabricante,
     findProductosByImportacion: findProductosByImportacion,
     getMaterialesSelect2: getMaterialesSelect2,
-    uploadImage:uploadImage,
-    getImageFile:getImageFile,
     findProductosByCodigoFabricante:findProductosByCodigoFabricante,
     subidaMasivaProductos:subidaMasivaProductos
 };
-
-
-
-
-
-
-// function findProductos(req, res) {
-//     const queryParams = req.body;
-//     const filter = queryParams.filter || '',
-//         sortOrder = queryParams.sortOrder,
-//         pageNumber = parseInt(queryParams.pageNumber) || 0,
-//         pageSize = parseInt(queryParams.pageSize);
-//     var nitems = pageNumber * pageSize;
-
-//     db.any('SELECT * FROM producto_stock p  LIMIT ' + pageSize + ' OFFSET ' + nitems)
-//         .then(function(data) {
-//             var items = data;
-//             db.any("select count(*)  from producto p where p.estado=1")
-//                 .then(function(total) {
-//                     res.status(200)
-//                         .json({
-//                             items: items,
-//                             totalCount: total[0].count
-//                         });
-//                 })
-//                 .catch(function(err) {
-//                     console.log(err);
-//                     res.status(400).json({
-//                         result: 'ERROR',
-//                         message: err[0]
-//                     })
-//                 });
-//         })
-//         .catch(function(err) {
-//             console.log(err);
-//             res.status(400).json({
-//                 result: 'ERROR',
-//                 message: err[0]
-//             })
-//         });
-// }

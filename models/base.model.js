@@ -1,6 +1,19 @@
 var db = require('../bdd.coneccion');
-class ModelBase {    
-    async crud(sqlSentence, params) {
+let _model
+class ModelBase {
+    constructor(model){
+        _model = model
+    }
+
+    async create(sqlSentence, params) {
+        return await db.any(_model.CREATE, [...params])
+    }
+
+    async update(sqlSentence, params) {
+        return await db.any(sqlSentence, [...params])
+    }
+
+    async delete(sqlSentence) {
         return await db.any(sqlSentence, [...params])
     }
 
@@ -8,7 +21,11 @@ class ModelBase {
         return await db.any(sqlSentence, param)
     }
 
-    async getAll(sqlSentence, nItems, npag) {
+    async getAll(sqlSentence) {
+        return await db.any(sqlSentence, param)
+    }
+
+    async getAllPaginate(sqlSentence, nItems, npag) {
         return await db.any(sqlSentence, param)
     }
 }
