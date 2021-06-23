@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
-
-/* GET home page. */
-router.get('/redireccionamiento', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
+const express = require("express");
+require("express-async-errors");
+const { ErrorMiddleware } = require("../middlewares");
+module.exports = function({
+  ClasificacionRoutes
+}){
+  const router = express.Router();
+  const apiRoutes = express.Router();
+  apiRoutes.use(express.json())
+  apiRoutes.use("/clasificacion",ClasificacionRoutes);
+  router.use("/v1/api", apiRoutes);
+  router.use(ErrorMiddleware);
+  return router
+}
