@@ -1,8 +1,9 @@
-const ClasificacionModel = require('../models/clasificacion.model');
 const BaseRepository = require('./base.repository');
 
 class ClasificacionRepository extends BaseRepository {
-    constructor({ClasificacionModel}){}
+    constructor({ClasificacionModel}){
+        super(ClasificacionModel)
+    }
 }
 
 module.exports = ClasificacionRepository

@@ -1,6 +1,6 @@
 const express = require("express");
 require("express-async-errors");
-const { ErrorMiddleware } = require("../middlewares");
+const { ErrorMiddleWare } = require("../middlewares");
 module.exports = function({
   ClasificacionRoutes
 }){
@@ -9,6 +9,6 @@ module.exports = function({
   apiRoutes.use(express.json())
   apiRoutes.use("/clasificacion",ClasificacionRoutes);
   router.use("/v1/api", apiRoutes);
-  router.use(ErrorMiddleware);
+  router.use(ErrorMiddleWare);
   return router
 }

@@ -1,5 +1,5 @@
 'use strict'
-var db = require('./../bdd.coneccion');
+var db = require('../../bdd.coneccion');
 var bcrypt = require('bcrypt-nodejs');
 var jwt = require('../services/jwt');
 
