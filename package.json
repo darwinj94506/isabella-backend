@@ -39,6 +39,7 @@
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "custom-env": "^2.0.1"
+        "custom-env": "^2.0.1",
+        "sequelize-cli": "^6.2.0"
     }
 }

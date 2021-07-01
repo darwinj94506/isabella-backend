@@ -1,7 +1,6 @@
 const { createContainer, asClass, asValue, asFunction } = require("awilix");
 
 const config = require("../../config");
-
 const app = require("./index");
  
 const { ClasificacionModel } = require('../models');
@@ -11,6 +10,8 @@ const { ClasificacionRepository} = require("../repositories");
 const { ClasificacionController } = require('../controllers');
 
 const { ClasificacionRoutes } = require("../routes/index.routes");
+
+const db = require('../data/models');
 
 const { CreateClasificacionUseCase,
         DeleteClasificacionUseCase,
@@ -25,6 +26,7 @@ container
     .register({
         app: asClass(app).singleton(),
         router: asFunction(Routes).singleton(),
+        db: asValue(db),
         config: asValue(config)
     })
     .register({
