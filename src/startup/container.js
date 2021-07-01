@@ -14,6 +14,8 @@ const { ClasificacionRoutes } = require("../routes/index.routes");
 
 const { CreateClasificacionUseCase,
         DeleteClasificacionUseCase,
+        GetByIdClasificacionUseCase,
+        GetAllClasificacionUseCase,
         UpdateClasificacionUseCase } = require('../usecases/clasificacion')
 const Routes = require("../routes"); 
 
@@ -32,7 +34,9 @@ container
     .register({
         CreateClasificacionUseCase: asClass(CreateClasificacionUseCase).singleton(),
         UpdateClasificacionUseCase: asClass(UpdateClasificacionUseCase).singleton(),
-        DeleteClasificacionUseCase: asClass(DeleteClasificacionUseCase).singleton()
+        DeleteClasificacionUseCase: asClass(DeleteClasificacionUseCase).singleton(),
+        GetByIdClasificacionUseCase: asClass(GetByIdClasificacionUseCase).singleton(),
+        GetAllClasificacionUseCase: asClass(GetAllClasificacionUseCase).singleton(),
     })
     .register({
         ClasificacionController: asClass(ClasificacionController.bind(ClasificacionController)).singleton(),

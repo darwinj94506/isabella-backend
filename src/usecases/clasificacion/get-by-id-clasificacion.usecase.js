@@ -1,12 +1,12 @@
 _clasificacionRepository = null
-class CreateClasificacionUseCase {
+class GetByIdClasificacionUseCase {
     
     constructor({ClasificacionRepository}) {
         _clasificacionRepository = ClasificacionRepository
     }
     
     async execute(params){
-        return await _clasificacionRepository.create(params)
+        return await _clasificacionRepository.getById(params)
     }
 }
-module.exports = CreateClasificacionUseCase
+module.exports = GetByIdClasificacionUseCase

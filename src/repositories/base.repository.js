@@ -18,11 +18,11 @@ class BaseRepository {
     }
 
     async getById(id) {
-        return await db.any(this.model.GET_BY_ID, id)
+        return (await db.any(this.model.GET_BY_ID, id))[0]
     }
 
     async getAll() {
-        return await db.any(this.model.GET_ALL)
+        return (await db.any(this.model.GET_ALL))
     }
 
     async getAllPaginate(nItems, npag) {
