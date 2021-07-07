@@ -1,3 +1,4 @@
+
 _clasificacionRepository = null
 class UpdateUseCase {
     
@@ -5,8 +6,8 @@ class UpdateUseCase {
         _clasificacionRepository = ClasificacionRepository
     }
     
-    async execute(params){
-        return await _clasificacionRepository.update(params)
+     execute(params){
+        return _clasificacionRepository.update(params, params.idclasificacion)
     }
 }
 module.exports = UpdateUseCase

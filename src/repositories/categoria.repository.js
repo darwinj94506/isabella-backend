@@ -1,16 +1,16 @@
+const BaseRepository = require('./base.repository');
 const { api400Error, api404Error } = require('../error')
 
-const BaseRepository = require('./base.repository');
-
-class ClasificacionRepository extends BaseRepository {
-    constructor({Clasificacion}){
-        super(Clasificacion)
+class CategoriaRepository extends BaseRepository {
+    constructor({Categoria}){
+        super(Categoria)
     }
+    
     async get(id) {
         if(Number.isInteger(id)){
-            const result = await this.model.findAll({ 
+            const result =  await this.model.findAll({ 
                 where: this.generateQuery(id),
-                include: 'Categoria'
+                include: 'Clasificacion'
             });
 
             if(result.length === 0){
@@ -23,4 +23,4 @@ class ClasificacionRepository extends BaseRepository {
     }
 }
 
-module.exports = ClasificacionRepository
+module.exports = CategoriaRepository

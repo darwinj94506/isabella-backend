@@ -1,33 +1,61 @@
-const { param } = require('express/lib/router');
-var db = require('../../bdd.coneccion');
+const { generateError } = require('../helpers/generate.response');
+const { api400Error, api404Error } = require('../error')
 class BaseRepository {
-    constructor(model){
-        this.model = model
+    constructor(model) {
+        this.model = model;
     }
 
-    async create(params) {
-        return (await db.any(this.model.CRUD, [...params, 1]))[0]
-    }
-
-    async update(params) {
-        return (await db.any(this.model.CRUD, [...params, 2]))[0]
-    }
-
-    async delete(id) {
-        return (await db.any(this.model.CRUD, [id, '', 3]))[0]
-    }
-
-    async getById(id) {
-        return (await db.any(this.model.GET_BY_ID, id))[0]
+    async get(id) {
+        if(Number.isInteger(id)){
+            const result = await this.model.findAll({ where: this.generateQuery(id) });
+            if(result.length === 0){
+                console.log(result);
+                throw new api404Error('Error del cliente', 'El recurso solicitado no ha sido encontrado')
+            }
+            return result
+        }
+        throw new api400Error('Error de Formato','El Id enviado debe ser un entero')
     }
 
     async getAll() {
-        return (await db.any(this.model.GET_ALL))
+        return await this.model.findAll();
     }
 
-    async getAllPaginate(nItems, npag) {
-        return await db.any(sqlSentence, param)
+    async create(entity) {
+        return await this.model.create(entity)
+    }
+
+    async update(body, id) {
+        if(Number.isInteger(id)) {
+            const result = await this.model.update(body, {where: this.generateQuery(id)})
+            if(result[0]>0) {
+                return true
+            } else {
+                throw new api404Error('Error del cliente', 'Recurso no encontrado')
+            }
+        } else {
+            throw new api400Error('Error de Formato', 'El Id enviado debe ser un entero')
+        }   
+    }
+
+    async delete(id) {
+        if(Number.isInteger(id)) {
+            const result = await this.model.destroy({ where: this.generateQuery(id) });
+            if(result >0 )
+                return true
+            else 
+                throw new api400Error('Error de solicitud', 'No se pudo eliminar, no existe este/a '+this.model.tableName) 
+        }else{
+            throw new api400Error('Error de Formato', 'El Id enviado debe ser un entero')
+        }
+    }
+
+        
+    generateQuery(value){
+        const query = {};
+        query[this.model.primaryKeyAttribute] = value
+        return query;
     }
 }
 
-module.exports = BaseRepository
+module.exports = BaseRepository; 

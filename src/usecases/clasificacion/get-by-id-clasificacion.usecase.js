@@ -6,7 +6,7 @@ class GetByIdClasificacionUseCase {
     }
     
     async execute(params){
-        return await _clasificacionRepository.getById(params)
+        return await _clasificacionRepository.get(params)
     }
 }
 module.exports = GetByIdClasificacionUseCase
